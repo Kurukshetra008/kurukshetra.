@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kurukshetra: Apna Bharat, Apni Pehchan</title>
+  <meta name="description" content="Kurukshetra ek platform hai jaha students ko real knowledge, skills aur life direction milti hai. Yaha aapko practical learning aur growth ka roadmap milega.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+  
+<header>
+  <h1>Kurukshetra</h1>
+  <nav class="menu">
+    <a href="#">Home</a>
+    <a href="students.html">Students</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+  </nav>
+</header>
+
+<!-- 🔥 HERO -->
+<section class="hero">
+  <h2>Stop Following Blind Paths</h2>
+  <p>Understand Reality. Build Real Skills. Create Your Own Future.</p>
+  <div class="hero-btns">
+    <button onclick="location.href='start-learning.html'">Start Learning</button>
+    <button class="outline" onclick="location.href='education.html'">Explore Truth</button>
+  </div>
+</section>
+
+<!-- 📌 ABOUT -->
+<section class="about">
+  <h2>Real Knowledge. Real Direction.</h2>
+  <p>
+    Ye platform un logon ke liye hai jo reality samajhkar apni life build karna chahte hain.
+    Yaha tumhe skills, education system ki sachchai aur practical roadmap milega.
+  </p>
+</section>
+
+<!-- 🔥 MAIN BOXES -->
+<section class="main-sections">
+  <div class="box students" onclick="location.href='students.html'" >
+  <span class="box-text">Students</span>
+</div>
+  <div class="box skills" onclick="location.href='skills.html'">
+  <span class="box-text">skills</span>
+</div>
+<div class="box learning" onclick="location.href='start-learning.html'">
+  <span class="box-text">Start Learning</span>
+</div>
+  <div class="box education" onclick="location.href='education.html'">
+  <span class="box-text">reality of education system</span>
+</div>
+</section>
+
+<!-- 🚀 WHAT YOU GET -->
+<section class="features">
+  <h2>What You Will Get</h2>
+  <div class="feature-box">
+    <div>✔ Real Knowledge</div>
+    <div>✔ Practical Skills</div>
+    <div>✔ Clear Direction</div>
+    <div>✔ Growth Mindset</div>
+  </div>
+</section>
+
+<!-- 🧭 ROADMAP -->
+<section class="roadmap">
+  <h2>Your Journey</h2>
+  <div class="steps">
+    <div>Beginner → Learn Basics</div>
+    <div>Intermediate → Build Skills</div>
+    <div>Advanced → Real Projects</div>
+    <div>Expert → Earn & Grow</div>
+  </div>
+</section>
+
+<!-- 💡 SKILLS PREVIEW -->
+<section class="skills-preview">
+  <h2>Skills You Will Learn</h2>
+  <div class="skill-items">
+    <div>Coding</div>
+    <div>Ethical Hacking</div>
+    <div>Game Development</div>
+    <div>Communication</div>
+  </div>
+</section>
+
+<!-- ⚡ QUOTE -->
+<section class="quote">
+  <h2>"School tumhe padhata hai, duniya tumhe test karti hai."</h2>
+</section>
+
+<!-- 🎯 CTA -->
+<section class="cta">
+  <h2>Start Your Real Journey Today</h2>
+  <br><button>Join Now</button>
+</section>
+
+<!-- 🔚 FOOTER -->
+<footer>
+  <p>© 2026 Kurukshetra | Built for Real Learners</p>
+</footer>
+
+<script>
+window.addEventListener("load", function() {
+  setTimeout(function() {
+    document.getElementById("popup").style.display = "flex";
+  }, 5000); // 5 sec baad show
+});
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+function goToBlog() {
+  window.location.href = "blog.html";
+}
+</script>
+
+<div id="popup" class="popup">
+  <div class="popup-box">
+    
+    <h2>Confused About Your Future?</h2>
+
+    <p class="popup-text">
+      Agar tumhe samajh nahi aa raha ki life me kya karna hai, kaunsi skill seekhni hai 
+      ya kaise start karna hai — to hamara detailed blog tumhe clear direction dega.  
+      Yaha tumhe real guidance milegi jo school me nahi sikhayi jati.
+    </p>
+
+    <div class="popup-buttons">
+      <button onclick="goToBlog()">Yes, Show Me</button>
+      <button onclick="closePopup()">No, I'm Good</button>
+    </div>
+
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start Your Journey | Kurukshetra</title>
+  <meta name="description" content="Apni life ka real start karo. Skills seekho, direction pao aur apna future build karo.">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header>
+  <h1>Kurukshetra</h1>
+  <nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="students.html">Students</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Your Real Journey Starts Here</h2>
+  <p>Ab confusion khatam — action start</p>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="start-page">
+
+  <h2>Choose Your Interest</h2>
+
+  <div class="options">
+    <button onclick="selectInterest('tech')">📱 Mobile / Laptop</button>
+    <button onclick="selectInterest('creative')">🎨 Design / Drawing</button>
+    <button onclick="selectInterest('video')">🎬 Video Editing</button>
+    <button onclick="selectInterest('business')">💰 Business</button>
+  </div>
+
+  <!-- 👇 FULL RESULT BLOCK (hidden) -->
+  <div id="result-box" class="result-box" style="display:none;">
+
+    <h2>Your Skill</h2>
+    <p id="skill-result"></p>
+
+    <h2>Start Learning</h2>
+    <div class="learning-box">
+      <p>✔ Start with YouTube (free)</p>
+      <p>✔ Daily 1 hour practice</p>
+      <p>✔ Copy + practice (beginner phase)</p>
+    </div>
+
+    <h2>Do This Today</h2>
+    <div class="task-box">
+      <p id="task"></p>
+    </div>
+
+  </div>
+
+</section>
+
+  <h2>Step 3: Start Learning Daily</h2>
+  <p>
+    Daily 1–2 ghante learning ke liye fix karo. Consistency hi success ka secret hai.
+  </p>
+
+  <h2>Step 4: Build Something</h2>
+  <p>
+    Sirf dekhna nahi — practice karo. Chhote projects banao.
+    Real work hi tumhe aage le jayega.
+  </p>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-pro">
+  <div class="cta-box">
+    <h2>Need Help?</h2>
+    <p>Personal guidance ke liye DM karo</p>
+
+    <a href="https://instagram.com/YOUR_USERNAME" target="_blank">
+      <button class="insta-btn">DM on Instagram</button>
+    </a>
+  </div>
+</section>
+<script>
+  resultBox.scrollIntoView({ behavior: "smooth" });
+function selectInterest(type) {
+
+  let resultBox = document.getElementById("result-box");
+  let skill = document.getElementById("skill-result");
+  let task = document.getElementById("task");
+
+  // 👇 show full result block
+  resultBox.style.display = "block";
+
+  if (type === "tech") {
+    skill.innerText = "Learn Coding / Web Development";
+    task.innerText = "👉 Today: YouTube par 'HTML basic' search karo aur ek simple webpage bana ke dekho";
+  }
+  else if (type === "creative") {
+    skill.innerText = "Learn Graphic Design";
+    task.innerText = "👉 Today: Canva open karo aur ek Instagram post design karo";
+  }
+  else if (type === "video") {
+    skill.innerText = "Learn Video Editing";
+    task.innerText = "👉 Today: CapCut me 30 sec ka reel edit karo";
+  }
+  else if (type === "business") {
+    skill.innerText = "Learn Selling & Marketing";
+    task.innerText = "👉 Today: Ek product idea likho aur uska Instagram caption banao";
+  }
+}
+</script>
+</body>
+</html>
